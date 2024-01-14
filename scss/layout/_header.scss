@@ -17,6 +17,7 @@
 .top-bar {
   @extend %flexItemCenter;
   padding: 3rem 0rem;
+  position: relative;
   @include abstract.breakpoint(sm) {
     padding: 1.6rem 0rem;
     justify-content: space-between;
@@ -47,12 +48,13 @@
 
   &__list {
     @extend %flexItemCenter;
-    gap: 3rem;
   }
 
   &__link {
+    height: 5rem;
     @extend %flexItemCenter;
     gap: 0.6rem;
+    padding: 0rem 1.5rem;
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 146.667%;
@@ -61,6 +63,20 @@
 
   &__arrow {
     @include widthHeight(1.2rem, 1.2rem);
+  }
+
+  &__item {
+    &:first-child a {
+      padding-left: 0;
+    }
+
+    &:last-child a {
+      padding-right: 0;
+    }
+
+    &:hover .drop-down {
+      display: block;
+    }
   }
 }
 

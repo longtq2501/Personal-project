@@ -2,7 +2,7 @@
   <div class="top-bar">
     <!-- More -->
     <button class="icon top-bar__more">
-      <img src="./assets/icons/more.svg" alt="" class="top-bar__more--icon">
+      <img src="./assets/icons/more.svg" alt="" class="top-bar__more--icon" />
     </button>
 
     <!-- Logo -->
@@ -11,10 +11,9 @@
       <h1 class="logo__title">grocerymart</h1>
     </a>
     <!-- Nav bar  -->
-
     <nav class="navbar">
-      <ul class="navbar__list">
-        <li>
+      <ul class="navbar__list js-dropdown-list">
+        <li class="navbar__item">
           <a href="" class="navbar__link">
             Departments
             <img
@@ -23,8 +22,16 @@
               class="navbar__arrow icon"
             />
           </a>
+
+          <div class="drop-down">
+            <div class="drop-down__inner">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Cupiditate possimus, accusamus numquam perferendis vitae fugit ea
+              reprehenderit necessitatibus rem natus!
+            </div>
+          </div>
         </li>
-        <li>
+        <li class="navbar__item">
           <a href="" class="navbar__link">
             Grocery
             <img
@@ -33,8 +40,15 @@
               class="navbar__arrow icon"
             />
           </a>
+          <div class="drop-down">
+            <div class="drop-down__inner">
+              Lorem 2 ipsum dolor sit amet consectetur, adipisicing elit.
+              Cupiditate possimus, accusamus numquam perferendis vitae fugit ea
+              reprehenderit necessitatibus rem natus!
+            </div>
+          </div>
         </li>
-        <li>
+        <li class="navbar__item">
           <a href="" class="navbar__link">
             Beauty
             <img
@@ -43,26 +57,45 @@
               class="icon navbar__arrow"
             />
           </a>
+          <div class="drop-down">
+            <div class="drop-down__inner">
+              Lorem 3 ipsum dolor sit amet consectetur, adipisicing elit.
+              Cupiditate possimus, accusamus numquam perferendis vitae fugit ea
+              reprehenderit necessitatibus rem natus!
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
     <div class="top-act">
       <div class="top-act__group">
         <button class="top-act__btn top-act__btn--search">
-          <img src="./assets/icons/search.svg" alt="" class="top-act__icon icon" />
+          <img
+            src="./assets/icons/search.svg"
+            alt=""
+            class="top-act__icon icon"
+          />
         </button>
       </div>
 
       <div class="top-act__group">
         <button class="top-act__btn">
-          <img src="./assets/icons/heart.svg" alt="" class="top-act__icon icon" />
+          <img
+            src="./assets/icons/heart.svg"
+            alt=""
+            class="top-act__icon icon"
+          />
           <span class="top-act__title">03</span>
         </button>
 
         <div class="top-act__separate"></div>
 
         <button class="top-act__btn">
-          <img src="./assets/icons/shopping.svg" alt="" class="top-act__icon icon" />
+          <img
+            src="./assets/icons/shopping.svg"
+            alt=""
+            class="top-act__icon icon"
+          />
           <span class="top-act__title">$65.42</span>
         </button>
       </div>
