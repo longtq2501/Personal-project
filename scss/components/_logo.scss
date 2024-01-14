@@ -1,0 +1,17 @@
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+    gap: 1.4rem;
+  &__title {
+    @include widthHeight(14.4rem, 3.2rem);
+    color: var(--text-color);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 145.455%;
+  }
+}
