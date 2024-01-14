@@ -1,5 +1,4 @@
 $grid-breakpoints: (
-  xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
@@ -17,3 +16,4 @@ $grid-breakpoints: (
     @error "The value #{$key} is not in the breakpoint list";
   }
 }
+
