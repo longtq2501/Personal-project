@@ -10,17 +10,17 @@
   align-items: center;
   gap: 1.4rem;
 
-  @include abstract.breakpoint(sm) {
-    
-  }
-
   @include abstract.breakpoint(lg) {
     gap: 1rem;
-    margin-left: 3.9rem;
+    margin-left: 2rem;
+  }
+
+  @include abstract.breakpoint(sm) {
+    margin-left: 0;
   }
 
   &__title {
-    @include widthHeight(14.4rem, 3.2rem);
+    @include widthHeight(null, 3.2rem);
     color: var(--text-color);
     font-size: 2.2rem;
     font-weight: 700;

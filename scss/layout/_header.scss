@@ -19,6 +19,7 @@
   padding: 3rem 0rem;
   @include abstract.breakpoint(sm) {
     padding: 1.6rem 0rem;
+    justify-content: space-between;
   }
 
   @include abstract.breakpoint(lg) {
@@ -67,6 +68,10 @@
   @extend %flexItemCenter;
   margin-left: auto;
   gap: 2rem;
+
+  @include abstract.breakpoint(sm) {
+    margin-left: 0;
+  }
 
   &__avatar {
     @include widthHeight(5rem, 5rem);
