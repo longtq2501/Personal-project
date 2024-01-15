@@ -19,6 +19,10 @@
     margin-left: 0;
   }
 
+  @include abstract.breakpoint(md) {
+    margin-left: 0;
+  }
+
   &__title {
     @include widthHeight(null, 3.2rem);
     color: var(--text-color);

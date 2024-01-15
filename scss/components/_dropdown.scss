@@ -12,11 +12,10 @@
     background: var(--dropdown-bg-color);
     box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
     height: min(58.2rem, 100vh - 15.8rem);
-    overflow: auto;
 
     &::before {
       position: absolute;
-      content: url("../icon/dropdown-arrow.svg");
+      content: url("/assets/icons/dropdown-arrow.svg");
       top: -1.3rem;
       left: var(--arrow-left-pos);
       transform: translateX(-50%);
@@ -93,6 +92,16 @@
     &--mb {
       margin-bottom: 1.4rem;
       color: var(--menu-color-text);
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 142.857%;
+
+      &:hover {
+        color: #0071dc;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+      }
     }
   }
 }
