@@ -1,4 +1,5 @@
 html.dark {
+  //header bar
   --text-color: #fff;
   --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%)
     saturate(6510%) hue-rotate(150deg) brightness(133%) contrast(121%);
@@ -8,6 +9,7 @@ html.dark {
   --top-act-shadow-avatar: rgba(0, 0, 0, 0.2);
   --top-act-shadow-btn: rgba(0, 0, 0, 0.2);
   --top-act-separate: #ededf6;
+  --header-shadow: rgba(0, 0, 0, 0.2);
 
   //dropdown
   --dropdown-bg-color: #2f3441;

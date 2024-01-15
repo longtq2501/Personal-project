@@ -1,6 +1,7 @@
 @use "../abstract";
 
 html {
+  //header bar
   --text-color: #1a162e;
   --icon-color: brightness(0) saturate(100%) invert(10%) sepia(34%)
     saturate(841%) hue-rotate(210deg) brightness(90%) contrast(101%);
@@ -10,6 +11,7 @@ html {
   --top-act-shadow-avatar: rgba(0, 0, 0, 0.08);
   --top-act-shadow-btn: rgba(237, 237, 246, 0.2);
   --top-act-separate: #ededf6;
+  --header-shadow: rgba(237, 237, 246, 0.2);
 
   @include abstract.breakpoint(sm) {
     --header-bg-color: #fff;
@@ -19,5 +21,6 @@ html {
   --dropdown-bg-color: #fff;
   --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
   --top-menu-border: #d2d1d6;
-  --menu-column-action: brightness(0) saturate(100%) invert(7%) sepia(14%) saturate(4579%) hue-rotate(221deg) brightness(91%) contrast(94%);;
+  --menu-column-action: brightness(0) saturate(100%) invert(7%) sepia(14%)
+    saturate(4579%) hue-rotate(221deg) brightness(91%) contrast(94%);
 }
