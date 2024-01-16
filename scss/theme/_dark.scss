@@ -10,6 +10,7 @@ html.dark {
   --top-act-shadow-btn: rgba(0, 0, 0, 0.2);
   --top-act-separate: #ededf6;
   --header-shadow: rgba(0, 0, 0, 0.2);
+  --header-bg-lg-color: #171c28;
 
   //dropdown
   --dropdown-bg-color: #2f3441;
@@ -20,4 +21,8 @@ html.dark {
   --menu-column-action: brightness(0) saturate(100%) invert(100%) sepia(97%)
     saturate(489%) hue-rotate(254deg) brightness(110%) contrast(97%);
   --menu-color-text: #b9babe;
+
+  //tablets/mobiles dropdown menu
+  --menu-drawer-shadow: rgba(23, 28, 40, 0.40);
+  --menu-drawer-bg-color:#292E39;
 }

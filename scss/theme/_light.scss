@@ -12,6 +12,7 @@ html {
   --top-act-shadow-btn: rgba(237, 237, 246, 0.2);
   --top-act-separate: #ededf6;
   --header-shadow: rgba(237, 237, 246, 0.2);
+  --header-bg-lg-color: #fff;
 
   @include abstract.breakpoint(sm) {
     --header-bg-color: #fff;
@@ -23,4 +24,8 @@ html {
   --top-menu-border: #d2d1d6;
   --menu-column-action: brightness(0) saturate(100%) invert(7%) sepia(14%)
     saturate(4579%) hue-rotate(221deg) brightness(91%) contrast(94%);
+
+  //tablets/mobiles dropdown menu
+  --menu-drawer-shadow: rgba(200, 200, 200, 0.4);
+  --menu-drawer-bg-color:#FFF;
 }

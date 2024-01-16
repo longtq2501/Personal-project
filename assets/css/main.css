@@ -1215,11 +1215,14 @@ html {
   --top-act-shadow-btn: rgba(237, 237, 246, 0.2);
   --top-act-separate: #ededf6;
   --header-shadow: rgba(237, 237, 246, 0.2);
+  --header-bg-lg-color: #fff;
   --dropdown-bg-color: #fff;
   --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
   --top-menu-border: #d2d1d6;
   --menu-column-action: brightness(0) saturate(100%) invert(7%) sepia(14%)
     saturate(4579%) hue-rotate(221deg) brightness(91%) contrast(94%);
+  --menu-drawer-shadow: rgba(200, 200, 200, 0.4);
+  --menu-drawer-bg-color:#FFF;
 }
 @media (max-width: 575.98px) {
   html {
@@ -1238,6 +1241,7 @@ html.dark {
   --top-act-shadow-btn: rgba(0, 0, 0, 0.2);
   --top-act-separate: #ededf6;
   --header-shadow: rgba(0, 0, 0, 0.2);
+  --header-bg-lg-color: #171c28;
   --dropdown-bg-color: #2f3441;
   --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
   --dropdown-arrow-color: brightness(0) saturate(100%) invert(18%) sepia(8%)
@@ -1246,6 +1250,8 @@ html.dark {
   --menu-column-action: brightness(0) saturate(100%) invert(100%) sepia(97%)
     saturate(489%) hue-rotate(254deg) brightness(110%) contrast(97%);
   --menu-color-text: #b9babe;
+  --menu-drawer-shadow: rgba(23, 28, 40, 0.40);
+  --menu-drawer-bg-color:#292E39;
 }
 
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
@@ -1258,7 +1264,7 @@ html.dark {
 }
 @media (max-width: 991.98px) {
   .header {
-    background: #fff;
+    background: var(--header-bg-lg-color);
     box-shadow: 0px 20px 60px 10px var(--header-shadow);
   }
 }
@@ -1497,6 +1503,11 @@ html.dark {
   position: relative;
   width: 3.3rem;
 }
+@media (max-width: 1199.98px) {
+  .menu-column__icon {
+    display: none;
+  }
+}
 .menu-column__icon--shape {
   position: absolute;
   left: 0;
@@ -1522,7 +1533,7 @@ html.dark {
   line-height: 142.857%;
 }
 .menu-column__list--mb {
-  margin-bottom: 1.4rem;
+  padding: 0.7rem 0rem;
   color: var(--menu-color-text);
   font-size: 1.4rem;
   font-weight: 400;
@@ -1554,6 +1565,20 @@ html.dark {
 }
 .details-column__list:last-child {
   margin-bottom: 0;
+}
+
+.drop-down__inner--od2 {
+  display: grid;
+  grid-template-columns: 211px 209px 182px 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 77px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  width: min(109rem, 100%);
+  height: min(52.2rem, 100%);
+}
+.drop-down__inner--od2--ml {
+  margin-left: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
