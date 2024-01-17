@@ -1,9 +1,9 @@
 <div class="container">
   <div class="top-bar">
     <!-- More -->
-    <label for="header-icon__more" class="icon top-bar__more">
+    <button class="icon top-bar__more js-toggle" toggle-target="#navbar">
       <img src="./assets/icons/more.svg" alt="" class="top-bar__more--icon" />
-    </label>
+    </button>
 
     <!-- Logo -->
     <a href="./" class="logo">
@@ -11,10 +11,14 @@
       <h1 class="logo__title">grocerymart</h1>
     </a>
     <!-- Nav bar  -->
-    <nav class="navbar">
+    <nav id="navbar" class="navbar hide">
+      <button class="navbar__close--btn js-toggle" toggle-target="#navbar">
+        <img src="./assets/icons/arrow-left.svg" alt="">
+      </button>
+
       <ul class="navbar__list js-dropdown-list">
         <li class="navbar__item">
-          <a href="" class="navbar__link">
+          <a href="#!" class="navbar__link">
             Departments
             <img src="./assets/icons/arrow-down.svg" alt="" class="navbar__arrow icon" />
           </a>
@@ -2096,7 +2100,7 @@
           </div>
         </li>
         <li class="navbar__item">
-          <a href="" class="navbar__link">
+          <a href="#!" class="navbar__link">
             Grocery
             <img src="./assets/icons/arrow-down.svg" alt="" class="navbar__arrow icon" />
           </a>
@@ -2290,7 +2294,7 @@
           </div>
         </li>
         <li class="navbar__item">
-          <a href="" class="navbar__link">
+          <a href="#!" class="navbar__link">
             Beauty
             <img src="./assets/icons/arrow-down.svg" alt="" class="icon navbar__arrow" />
           </a>
@@ -2445,6 +2449,8 @@
         </li>
       </ul>
     </nav>
+    <!-- Over lay -->
+    <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
     <div class="top-act">
       <div class="top-act__group">
         <button class="top-act__btn top-act__btn--search">

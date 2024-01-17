@@ -55,11 +55,54 @@
   }
 
   @include abstract.breakpoint(lg) {
+    position: fixed;
+    inset: 0 50% 0 0;
+    background: #fff;
+    padding: 2rem 0rem;
+    margin-left: 0;
+    z-index: 9;
+    transform: translateX(-100%);
+    transition: 0.5s;
+
+    &.show {
+      transform: translateX(0);
+    }
+
+    &.show ~ &__overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__close--btn {
     display: none;
+
+    @include abstract.breakpoint(lg) {
+      display: block;
+      padding: 1rem 4rem;
+    }
+  }
+
+  &__overlay {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+
+    @include abstract.breakpoint(lg) {
+      position: fixed;
+      inset: 0;
+      z-index: 8;
+      background: rgba(0, 0, 0, 0.4);
+    }
   }
 
   &__list {
     @extend %flexItemCenter;
+
+    @include abstract.breakpoint(lg) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__link {
@@ -71,6 +114,13 @@
     font-weight: 500;
     line-height: 146.667%;
     color: inherit;
+
+    @include abstract.breakpoint(lg) {
+      padding: 0rem 4rem;
+      font-size: 1.6rem;
+      line-height: 150%;
+      justify-content: space-between;
+    }
   }
 
   &__arrow {
@@ -80,6 +130,14 @@
   &__item {
     &:hover .drop-down {
       display: block;
+    }
+
+    @include abstract.breakpoint(lg) {
+      width: 100%;
+
+      &:hover .drop-down {
+        display: none;
+      }
     }
   }
 }
