@@ -37,14 +37,6 @@
   @include abstract.breakpoint(lg) {
     padding: 1.6rem 0rem;
   }
-
-  &__more {
-    display: none;
-
-    @include abstract.breakpoint(lg) {
-      display: block;
-    }
-  }
 }
 
 .navbar {
@@ -102,6 +94,8 @@
     @include abstract.breakpoint(lg) {
       flex-direction: column;
       align-items: flex-start;
+      overflow-y: auto;
+      height: calc(100% - 28px);
     }
   }
 
@@ -134,10 +128,6 @@
 
     @include abstract.breakpoint(lg) {
       width: 100%;
-
-      &:hover .drop-down {
-        display: none;
-      }
     }
   }
 }
@@ -166,14 +156,6 @@
     @extend %flexItemCenter;
     background: var(--top-act-bg-group);
     border-radius: 0.8rem;
-
-    @include abstract.breakpoint(sm) {
-      display: none;
-    }
-
-    @include abstract.breakpoint(md) {
-      display: none;
-    }
   }
 
   &__btn {
